@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@apollo/client": "^3.11.8",
+    "@formily/antd": "^2.3.2",
+    "@formily/core": "^2.3.2",
+    "@formily/react": "^2.3.2",
+    "antd": "^4.24.16",
+    "graphql": "^16.9.0"
+  }
+}
