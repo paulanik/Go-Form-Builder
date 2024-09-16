@@ -1,6 +1,6 @@
 import React from 'react';
 import FormBuilder from './pages/Forms/FormBuilder';
-import './styles/App.css';
+import '../styles/App.css';  // Correct path to App.css
 
 const App = () => {
     return (

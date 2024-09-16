@@ -1,6 +1,6 @@
 import React from 'react';
 import { createForm } from '@formily/core';
-import { FormProvider, Form, Field } from '@formily/react';
+import { FormProvider, Field, createSchemaField } from '@formily/react';
 import { Input, Submit } from '@formily/antd';
 import { useMutation } from '@apollo/client';
 import gql from 'graphql-tag';
@@ -13,6 +13,12 @@ const SUBMIT_FORM = gql`
         }
     }
 `;
+
+const SchemaField = createSchemaField({
+    components: {
+        Input,
+    },
+});
 
 const FormBuilder = () => {
     const form = createForm();
@@ -29,16 +35,17 @@ const FormBuilder = () => {
 
     return (
         <FormProvider form={form}>
-            <Form onSubmit={onSubmit}>
-                <Field name="name" title="Name" required>
-                    <Input />
-                </Field>
-                <Field name="email" title="Email" required>
-                    <Input />
-                </Field>
-                {/* Add more fields as needed */}
+            <form onSubmit={onSubmit}>
+                <SchemaField>
+                    <Field name="name" title="Name" required>
+                        <Input />
+                    </Field>
+                    <Field name="email" title="Email" required>
+                        <Input />
+                    </Field>
+                </SchemaField>
                 <Submit>Submit</Submit>
-            </Form>
+            </form>
         </FormProvider>
     );
 };
