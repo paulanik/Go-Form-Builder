@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/static/js/main.7456892f.js",
+    "static/media/style.less": "/static/media/style.31d6cfe0d16ae931b73c.less",
+    "index.html": "/index.html",
+    "main.7456892f.js.map": "/static/js/main.7456892f.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7456892f.js"
+  ]
+}

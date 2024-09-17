@@ -1,9 +1,11 @@
 package models
 
-import "gorm.io/gorm"
-
+// Form represents a form structure.
 type Form struct {
-	gorm.Model
-	Title   string `json:"title"`
-	Content string `json:"content"` // This can be JSON for the form structure
+	Name string
+}
+
+// NewForm creates a new Form instance.
+func NewForm(name string) *Form {
+	return &Form{Name: name}
 }
