@@ -1,8 +1,19 @@
-# NPM packages folder.
-node_modules
+# Node modules
+node_modules/
 
-# lock files
-# package-lock.json
+# Build output
+build/
+dist/
 
-# Optional npm cache directory
-# .npm
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# IDE specific files
+.idea/
+.vscode/
+.DS_Store
