@@ -1,0 +1,29 @@
+.canvas-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .canvas-header {
+    padding: 8px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .canvas-header input {
+    flex-grow: 1;
+    margin-right: 8px;
+    padding: 4px;
+  }
+  
+  .canvas-header button {
+    padding: 4px 8px;
+  }
+  
+  .canvas {
+    flex-grow: 1;
+    position: relative;
+    background-color: #fff;
+  }
+  

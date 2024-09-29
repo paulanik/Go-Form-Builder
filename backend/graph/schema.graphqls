@@ -6,6 +6,7 @@ type Form {
 
 type Query {
   forms: [Form!]!
+  form(id: ID!): Form
 }
 
 input NewForm {

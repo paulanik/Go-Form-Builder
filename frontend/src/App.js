@@ -1,17 +1,19 @@
 import React from 'react';
-import DragComponents from './components/DragComponents';
-import FormBuilder from './components/FormBuilder';
-import FormOptions from './components/FormOptions';
 import './App.css';
+import Sidebar from './components/Sidebar';
+import Canvas from './components/Canvas';
+import PropertiesPanel from './components/PropertiesPanel';
 
-const App = () => {
+function App() {
   return (
-    <div style={{ display: 'flex', height: '100vh' }}>
-      <DragComponents />
-      <FormBuilder />
-      <FormOptions />
+    <div className="App">
+      <div className="layout">
+        <Sidebar />
+        <Canvas />
+        <PropertiesPanel />
+      </div>
     </div>
   );
-};
+}
 
 export default App;
