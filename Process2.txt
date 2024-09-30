@@ -185,8 +185,11 @@ func main() {
 	}
 }
 
-This is the code for backend part till now.
+This is the code for the backend part till now.
 
-Instruction: The project was for creating a form builder with Golang and gqlgen for the backend, and formily (react) for frontend. Every submitted form by the user should be saved as a single schema (table) in the database.
+Instruction: The project is for creating a form builder with Golang and gqlgen for the backend and API, and react for front end. also need API so others can use this form builder.
+The form builder should contains: 3 parts in the display, on the left there should be the componenets to drag and drop (text, date, dropdown etc) and the list of forms, in the middle section we can create the form builder by drag and drop, on the right there should be more options for the components. 
 
-now create the frontend part aligning with the backend codes
+1. Every submitted form by the user should be saved as a single schema (table) in the database.
+
+Now create the frontend part aligning with the backend codes.
